@@ -1,27 +1,85 @@
-body {
+* {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+.crousel-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.crsl-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hamburger {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 10;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
+
+.sidebar {
+  position: fixed;
+  z-index: 9;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: -500px;
+  transition: left 0.5s ease-in-out;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  color: #fff;
+  display: flex;
+  width: 100%;
+  height: 60%;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: fixed;
+    left: -1200px;
+  }
+}
+
+/* Ipad */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .sidebar {
+    width: 50%;
+    position: fixed;
+    left: -1000px;
+  }
 }
