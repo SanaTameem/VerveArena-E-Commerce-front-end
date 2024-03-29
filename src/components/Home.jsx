@@ -19,20 +19,20 @@ const Home = () => (
           alt="Second slide"
         />
       </Carousel.Item>
-      <Carousel.Item>
+      {/* <Carousel.Item>
         <img
           className="d-block w-100 crsl-image"
           src={`${process.env.PUBLIC_URL}/assets/makeup-1.jpg`}
           alt="First slide"
         />
-      </Carousel.Item>
-      <Carousel.Item>
+      </Carousel.Item> */}
+      {/* <Carousel.Item>
         <img
           className="d-block w-100 crsl-image"
           src={`${process.env.PUBLIC_URL}/assets/skin-3.jpg`}
           alt="First slide"
         />
-      </Carousel.Item>
+      </Carousel.Item> */}
       <Carousel.Item>
         <img
           className="d-block w-100 crsl-image"
@@ -40,7 +40,7 @@ const Home = () => (
           alt="First slide"
         />
       </Carousel.Item>
-      <Carousel.Item>
+      {/* <Carousel.Item>
         <img
           className="d-block w-100 crsl-image"
           src={`${process.env.PUBLIC_URL}/assets/men-1.avif`}
@@ -53,7 +53,7 @@ const Home = () => (
           src={`${process.env.PUBLIC_URL}/assets/kids-3.jpg`}
           alt="First slide"
         />
-      </Carousel.Item>
+      </Carousel.Item> */}
     </Carousel>
   </div>
 );
