@@ -1,0 +1,86 @@
+.signup-page {
+  background-color: rgb(41, 39, 39);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  color: #fff;
+  gap: 20px;
+}
+
+.signup-title {
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+.signup-form {
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 20px;
+}
+
+.signup-input {
+  padding: 5px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+}
+
+.signup-label {
+  flex-direction: column;
+  letter-spacing: 2px;
+
+  /* align-self: flex-start; */
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  width: 100%;
+}
+
+.signup-button {
+  margin-top: 20px;
+  padding: 6px;
+  width: 50%;
+  border-radius: 12px;
+  color: #fff;
+  background: #000;
+  border: none;
+}
+
+.signup-button:disabled {
+  background: rgb(128, 128, 128);
+  color: rgb(85, 85, 85);
+}
+
+.instruction {
+  font-size: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+.valid svg {
+  color: #00d900;
+}
+
+.invalid svg {
+  color: #f00;
+}
+
+#userNameDesc svg,
+#emailDesc svg,
+#passwordDesc svg,
+#addressDesc svg {
+  color: #6ad0ff;
+  margin-right: 8px;
+}

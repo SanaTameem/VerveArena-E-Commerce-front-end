@@ -29,44 +29,6 @@ const Navbar = () => {
   ];
 
   return (
-  // <>
-  //   <div className="hum-logo">
-  //     <img src={`${process.env.PUBLIC_URL}/assets/logo.png`} className="logo" alt="logo-img" />
-  //     <FontAwesomeIcon
-  //       className="hamburger"
-  //       icon={faBars}
-  //       style={{ color: '#ffffff' }}
-  //       onClick={toggleSidebar}
-  //     />
-  //   </div>
-  //   <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-  //     <nav className="navbar">
-  //       <ul className="nav-list">
-  //         {mainCategories.map((category) => (
-  //           <li key={category.name} className="nav-item">
-  //             <button
-  //               type="button"
-  //               className="category-btn"
-  //               onClick={() => handleCategoryClick(category.name)}
-  //             >
-  //               {category.name}
-  //             </button>
-  //             {openCategory === category.name && (
-  //               <ul className="subcategories">
-  //                 {category.subCategories.map((subCategory) => (
-  //                   <li key={subCategory} className="sub-category-item">
-  //                     <button type="button" className="sub-category-btn">{subCategory}</button>
-  //                   </li>
-  //                 ))}
-  //               </ul>
-  //             )}
-  //           </li>
-  //         ))}
-  //       </ul>
-  //     </nav>
-  //   </div>
-  // </>
-
     <>
       <div className="header">
         <div className="hum-logo">
